@@ -5,7 +5,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const pathToMainJs = require.resolve("./src/app.js");
 const pathToIndexCss = require.resolve("./src/css/style.css");
 const pathToIndexHtml = require.resolve("./src/index.html");
-const pathToIndexFavicon = require.resolve("./img/favicon.ico");
+const pathToIndexFavicon = require.resolve("./src/img/favicon.ico");
 
 module.exports = {
   entry: [
@@ -21,7 +21,7 @@ module.exports = {
     filename: "app.js",
     publicPath: "/",
   },
-  modules: {
+  module: {
     rules: [
       {
         test: /\.js$/,
